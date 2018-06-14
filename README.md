@@ -1,0 +1,3 @@
+# FlappyBird
+Play your fav mobile game on a computer or whever...
+Just click on index to play!
