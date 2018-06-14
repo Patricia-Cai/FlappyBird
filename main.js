@@ -1,17 +1,17 @@
 //initialize game
 var game = new Phaser.Game(400, 490, Phaser.AUTO, 'gameDiv');
 
-//create main state?
+//create main state
 var mainState = {};
 
 mainState.preload = function() {
-	game.load.image('ground', 'assets/ground.png');
-	game.load.image('background', 'assets/background.png');
-	game.load.image('title', 'assets/title.png');
-	game.load.image('start-button', 'assets/start-button.png');
-	game.load.image('bird', 'assets/flappybird.png');
-	game.load.image('pipe', 'assets/pipe.png');
-	game.load.audio('jump', 'assets/jump.wav');
+	game.load.image('ground', 'Documents\GitHub\FlappyBird\assets\ground.png');
+	game.load.image('background', 'Documents\GitHub\FlappyBird\assets\background.png');
+	game.load.image('title', 'assets/Documents\GitHub\FlappyBird\assets\title.png');
+	game.load.image('start-button', 'Documents\GitHub\FlappyBird\assets\start-button.png');
+	game.load.image('bird', 'Documents\GitHub\FlappyBird\assets\flappybird.png');
+	game.load.image('pipe', 'Documents\GitHub\FlappyBird\assets\pipe.png');
+	game.load.audio('jump', 'Documents\GitHub\FlappyBird\assets\jump.wav');
 
 };
 
@@ -68,10 +68,6 @@ mainState.jump = function() {
 	var animation = game.add.tween(this.bird);
 	animation.to({angle: -20}, 100);
 	animation.start();
-
-	//above three lines can be written as:
-	//game.add.tween(this.bird).to({angle: -20}, 100).start();  
-
 	this.jumpSound.play();
 
 };
