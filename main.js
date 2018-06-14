@@ -5,13 +5,13 @@ var game = new Phaser.Game(400, 490, Phaser.AUTO, 'gameDiv');
 var mainState = {};
 
 mainState.preload = function() {
-	game.load.image('ground', 'Documents\GitHub\FlappyBird\assets\ground.png');
-	game.load.image('background', 'Documents\GitHub\FlappyBird\assets\background.png');
-	game.load.image('title', 'assets/Documents\GitHub\FlappyBird\assets\title.png');
-	game.load.image('start-button', 'Documents\GitHub\FlappyBird\assets\start-button.png');
-	game.load.image('bird', 'Documents\GitHub\FlappyBird\assets\flappybird.png');
-	game.load.image('pipe', 'Documents\GitHub\FlappyBird\assets\pipe.png');
-	game.load.audio('jump', 'Documents\GitHub\FlappyBird\assets\jump.wav');
+	game.load.image('ground', 'http://127.0.0.1:8887/ground.png');
+	game.load.image('background', 'http://127.0.0.1:8887/background.png');
+	game.load.image('title', 'http://127.0.0.1:8887/title.png');
+	game.load.image('start-button', 'http://127.0.0.1:8887/start-button.png');
+	game.load.image('bird', 'http://127.0.0.1:8887/flappybird.png');
+	game.load.image('pipe', 'http://127.0.0.1:8887/pipe.png');
+	game.load.audio('jump', 'http://127.0.0.1:8887/jump.wav');
 
 };
 
